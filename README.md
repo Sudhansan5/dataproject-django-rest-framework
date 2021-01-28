@@ -36,6 +36,12 @@ Django Rest Framework version of the data project
         python manage.py dataloader data_gov_maharashtra.csv
     ```
 
-4. Open any browser and go to (http://127.0.0.1:8000/)
+4.  Run below command in terminal to run server.
 
-5. Delete database and role in postgres using drop_db.sql.
+    ```python3
+        python manage.py runserver
+    ```
+
+5. Open any browser and go to (http://127.0.0.1:8000/)
+
+6. Delete database and role in postgres using drop_db.sql.
