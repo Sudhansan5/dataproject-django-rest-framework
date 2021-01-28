@@ -1,0 +1,19 @@
+.jumbotron{
+    background-color: rgb(212, 212, 228);
+}
+
+#button{
+    background-color: rgb(173, 173, 204);
+}
+
+label{
+    font-weight: bolder;
+}
+
+.submit{
+    background-color: rgb(173, 173, 204);
+}
+
+#output{
+    height: 500px;
+}

@@ -1,0 +1,59 @@
+
+{% extends 'home.html' %}
+{% block content %}
+{% load static %}
+    <form id = 'plot'>
+        <div class="row mt-5">
+            <div class="form-group col-md-3 col-sm-3 col-xs-12">
+                <label>Select Year</label>
+                <select name="year" required>
+                    <option value="">Year</option>
+                    <option value="1950">1950</option>
+                    <option value="1955">1955</option>
+                    <option value="1960">1960</option>
+                    <option value="1965">1965</option>
+                    <option value="1970">1970</option>
+                    <option value="1975">1975</option>
+                    <option value="1980">1980</option>
+                    <option value="1985">1985</option>
+                    <option value="1990">1990</option>
+                    <option value="1995">1995</option>
+                    <option value="2000">2000</option>
+                    <option value="2005">2005</option>
+                    <option value="2010">2010</option>        
+                </select>
+           
+        </div>
+        <div class="form-group col-md-3 col-sm-3 col-xs-12">
+            <label>Select Range</label>
+            <select name="range" required>
+                <option value="">Range</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select> 
+        </div>
+        <div class="form-group col-md-4 col-sm-3 col-xs-12">
+            <label>Select Company Type</label>
+            <select name="company_type" required>
+                <option value="">Choose</option>
+                <option value="Private">Private</option>
+                <option value="Public">Public</option>
+            </select>
+            </div>
+        <div class="col-md-2 col-sm-3 col-xs-12">
+            <input class="submit btn" type = 'submit'/>
+        </div>
+    </div> 
+    </form>
+</div>
+    <div id ='output'></div>
+<script src="../static/plot1.js"></script>
+{% endblock %}

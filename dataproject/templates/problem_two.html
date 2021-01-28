@@ -1,0 +1,63 @@
+
+{% extends 'home.html' %}
+{% block content %}
+{% load static %}
+    <form id = 'plot'>
+        <div class="mt-5">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <label>Start Year</label>
+                    <select name="start_year" required>
+                        <option value="">Year</option>
+                        <option value="1950">1950</option>
+                        <option value="1951">1951</option>
+                        <option value="1952">1952</option>
+                        <option value="1953">1953</option>
+                        <option value="1954">1954</option>
+                        <option value="1955">1955</option>
+                        <option value="1956">1956</option>
+                        <option value="1957">1957</option>
+                        <option value="1958">1958</option>
+                        <option value="1959">1959</option>
+                        <option value="1960">1960</option>                                        
+                    </select>
+                </div>   
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <label>End Year</label>
+                    <select name="end_year" required>
+                        <option value="">Year</option>
+                        <option value="1970">1970</option>
+                        <option value="1971">1971</option>
+                        <option value="1972">1972</option>
+                        <option value="1973">1973</option>
+                        <option value="1974">1974</option>
+                        <option value="1975">1975</option>
+                        <option value="1976">1976</option>
+                        <option value="1977">1977</option>
+                        <option value="1978">1978</option>
+                        <option value="1979">1979</option>
+                        <option value="1980">1980</option>                
+                    </select>
+                </div>
+                <div class="col-md-4 col-sm-3 col-xs-12">
+                    <label>PBA</label>
+                    <select name="pba" required>
+                        <option value="">Business Activity</option>
+                        <option value="Agriculture & allied">Agriculture & allied</option>
+                        <option value="Real estate renting and business activities">Real estate renting and business activities</option>
+                        <option value="Manufacturing">Manufacturing</option>
+                        <option value="Construction">Construction</option>                
+                        <option value="Health and social work">Health and social work</option>
+                        <option value="Hotels and restaurants">Hotels and restaurants</option>
+                    </select>
+                </div>       
+                <div class="col-md-2 col-sm-3 col-xs-12">
+                    <input class="submit btn" type = 'submit'/>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+    <div id ='output'></div>
+<script src="../static/plot2.js"></script>   
+{% endblock %}

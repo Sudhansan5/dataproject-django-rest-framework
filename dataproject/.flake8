@@ -1,0 +1,2 @@
+[flake8]
+exclude = company_master/migrations, company_master/tests.py, dataproject/settings.py
